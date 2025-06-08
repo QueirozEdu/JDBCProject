@@ -17,6 +17,7 @@ public class Program {
         Seller seller = sellerDao.findById(3);
 
         System.out.println(seller);
+        System.out.println("\n\n");
 
         System.out.println("--- Test 2: Find seller by Department ---");
         Department department = new Department(2, null);
@@ -25,6 +26,17 @@ public class Program {
              list) {
             System.out.println(obj);
         }
+        System.out.println("\n\n");
+
+
+        System.out.println("--- Test 3: Find all sellers ---");
+        list = sellerDao.findAll();
+        for (Seller obj :
+             list) {
+            System.out.println(obj);
+        }
+        System.out.println("\n\n");
+
 
     }
 }
